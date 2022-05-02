@@ -1,4 +1,5 @@
 import styles from './FriendList.module.css';
+import PropTypes from 'prop-types';
 export default FriendTamplate;
 function FriendTamplate({ name, isOnline, avatar }) {
   return (
@@ -9,3 +10,8 @@ function FriendTamplate({ name, isOnline, avatar }) {
     </li>
   );
 }
+FriendTamplate.propTypes = {
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+};
