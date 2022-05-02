@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default TransactionHistoryTemplate
 function TransactionHistoryTemplate({type, amount, currency}) {
     return <tr>
@@ -8,3 +9,8 @@ function TransactionHistoryTemplate({type, amount, currency}) {
         
      
 }
+TransactionHistoryTemplate.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};

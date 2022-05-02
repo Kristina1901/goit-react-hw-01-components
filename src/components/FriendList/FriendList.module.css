@@ -1,4 +1,4 @@
-.friend-list {
+.friendlist {
     margin-bottom: 0;
     width: 250px;
     background: linear-gradient(90deg, #c2a886, #917e64, #755b38);
@@ -8,25 +8,25 @@
     color: azure;
     
 }
-.friend-list .avatar {
+ .avatar {
   width: 48px;
   display: block;
   margin: 0;
   background: white;
   }
-.friend-list .item {
+.item {
    display: flex;
    flex-direction: row;
    align-items: center;
 }
-.true {
+.on {
     background: green;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     margin-right: 15px;
 }
-.false {
+.off {
     background: red;
     width: 15px;
     height: 15px;
@@ -35,6 +35,6 @@
     
     
 }
-.friend-list .name{
+.name{
   margin-left: 50px;
 }

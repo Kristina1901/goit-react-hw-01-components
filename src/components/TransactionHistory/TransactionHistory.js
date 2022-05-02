@@ -1,10 +1,10 @@
 import TransactionHistoryTemplate from './TransactionHistoryTemplate'
 import PropTypes from 'prop-types';
-import './TransactionHistory.css'
+import styles from './TransactionHistory.module.css';
 export default TransactionHistory
 function TransactionHistory({ items }) {
   return (
-  <table className="transaction-history">
+  <table className={styles.transactionhistory}>
   <thead>
     <tr>
       <th>Type</th>
@@ -25,10 +25,10 @@ function TransactionHistory({ items }) {
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   )
 }

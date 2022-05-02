@@ -1,9 +1,9 @@
 import FriendTamplate from './FriendTamplate';
 import PropTypes from 'prop-types';
-import './FriendList.css'
+import styles from './FriendList.module.css'
 function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friendlist}>
         {friends.map(({avatar, name, isOnline}) => {
             return <FriendTamplate key={name} name={name} isOnline={isOnline} avatar={avatar}/>
         })}

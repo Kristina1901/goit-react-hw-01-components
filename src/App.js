@@ -1,12 +1,12 @@
 import './App.css';
-import Profile from './components/Profile'
-import user from './user.json'
-import data from './data.json'
-import Statistics from './components/Statistics'
-import friends from './friends.json'
-import FriendList from './components/FriendList';
-import transactions from './transition.json';
-import TransactionHistory from './components/TransactionHistory';
+import Profile from './components/Profile/Profile'
+import user from './Data/user.json'
+import data from './Data/data.json'
+import StatisticsList from './components/Statistic/StatisticsList'
+import friends from './Data/friends.json'
+import FriendList from './components/FriendList/FriendList'
+import transactions from './Data/transition.json'
+import TransactionHistory from './components/TransactionHistory/TransactionHistory'
 function App() {
   return <div>
     <Profile
@@ -16,7 +16,7 @@ function App() {
   avatar={user.avatar}
   stats={user.stats}
     />
-    <Statistics title="Upload stats" stats={data} />
+    <StatisticsList title="Upload stats" stats={data} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />
    
