@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Statistics from './Statistics'
-import styles from './Statistic.module.css'
-export default StatisticsList
+import Statistics from './Statistics';
+import styles from './Statistic.module.css';
+export default StatisticsList;
 function StatisticsList({ title, stats }) {
   return (
     <section className={styles.statistics}>
@@ -22,7 +22,6 @@ Statistics.propTypes = {
       key: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-     
-    }),
+    })
   ),
 };
