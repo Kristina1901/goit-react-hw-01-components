@@ -9,8 +9,8 @@ function TransactionHistoryTemplate({ type, amount, currency }) {
     </tr>
   );
 }
-TransactionHistoryTemplate.propTypes = {
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
-};
+// TransactionHistoryTemplate.propTypes = {
+//   type: PropTypes.string.isRequired,
+//   amount: PropTypes.string.isRequired,
+//   currency: PropTypes.string.isRequired,
+// };
